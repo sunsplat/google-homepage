@@ -6,26 +6,71 @@
 		background-color: white;
 		text-align: center;
 		background-position: center;
+		font-family: helvetica;
+		padding: 0px;
+	}
+
+	header {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		width: 50%;
+		height: 50%;
+		margin: auto;
 	}
 	img {
 		height: 100px;
 		display: block;
 		margin: 0 auto;
 		padding: 30px;
-
 	}
 	input {
 		width: 500px;
 
 	}
+	ul li {
+		text-decoration: none;
+		display: inline;
+	}
+	ul.left {
+		float: left;
+	}
+
+	ul.right {
+		float: right;
+	}
+	
+	footer {
+		width: 100%;
+		position: absolute;
+  		bottom: 0;
+   		height: 60px;   /* Height of the footer */
+   		background: #6cf;
+   		padding: 0px;
+	}
+	
 	</style>
 
 </head>
 
 <body>
+	<header>
+		<img src="https://www.google.com/images/srpr/logo11w.png"><br>
+		<input type="text"><br>
+		<input type="button" value="Google Search"><input type="button" value="I'm Feeling Lucky">
 
-<img src="https://www.google.com/images/srpr/logo11w.png">
-<input type="text">
-
+		<p>Follow in the footsteps of music legends. Step inside Abbey Road Studios with Google.</p>
+	</header>
+	<footer>
+		<ul class="left">
+			<li>Advertising</li>
+			<li>Business</li>
+			<li>About</li>
+		</ul>
+		<ul class="right">
+			<li>Privacy</li>
+			<li>Terms</li>
+			<li>Settings</li>
+		</ul>
+	</footer>
 </body>
 </html>
