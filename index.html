@@ -32,18 +32,25 @@
 		text-decoration: none;
 		display: inline;
 	}
+	ul li a {
+		text-decoration: none;
+	}
 	ul.left {
 		float: left;
+		display: block;
+		overflow: hidden;
+		margin: 10px auto;
+		padding: 5px;
 	}
 
 	ul.right {
 		text-align: right;
+		display: block;
+		margin: 10px auto;
 	}
 
 	input.button {
-		display: inline-block;
 		width: 100px;
-		float: left;
 		padding: 5px;
 		left: 30%;
 		margin: 10px auto;
@@ -51,24 +58,25 @@
 	}
 
 	input.button1 {
-		display: inline;
 		width: 150px;
-		float: right;
 		padding: 5px;
 		right: 30%;
 		margin: 10px auto;
 		position: absolute;
 
 	}
+	
 	footer {
 		text-align: center;
 		width: 100%;
 		position: absolute;
   		bottom: 0;
-   		height: 60px;   /* Height of the footer */
-   		background: #6cf;
+   		height: 40px;   /* Height of the footer */
    		padding: 0px;
    		margin: 0px;
+   		background-color: #f2f2f2;
+   		font-size: small;
+   		display: block;
 	}
 	
 	p {
@@ -89,14 +97,14 @@
 	</header>
 	<footer>
 		<ul class="left">
-			<li>Advertising</li>
-			<li>Business</li>
-			<li>About</li>
+			<li><a href="#">Advertising</a></li>
+			<li><a href="#">Business</a></li>
+			<li><a href="#">About</a></li>
 		</ul>
 		<ul class="right">
-			<li>Privacy</li>
-			<li>Terms</li>
-			<li>Settings</li>
+			<li><a href="#">Privacy</a></li>
+			<li><a href="#">Terms</a></li>
+			<li><a href="#">Settings</a></li>
 		</ul>
 	</footer>
 </body>
