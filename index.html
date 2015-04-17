@@ -9,6 +9,7 @@
 		font-family: helvetica;
 		padding: 0px;
 		margin: 0px;
+		font-size: small;
 	}
 
 	header {
@@ -36,16 +37,16 @@
 		text-decoration: none;
 	}
 	ul.left {
+		display: inline;
 		float: left;
-		display: block;
 		overflow: hidden;
 		margin: 10px auto;
 		padding: 5px;
 	}
 
 	ul.right {
-		text-align: right;
-		display: block;
+		float: right;
+		display: inline;
 		margin: 10px auto;
 	}
 
@@ -67,21 +68,22 @@
 	}
 	
 	footer {
-		text-align: center;
 		width: 100%;
 		position: absolute;
   		bottom: 0;
-   		height: 40px;   /* Height of the footer */
-   		padding: 0px;
-   		margin: 0px;
+  		margin: 0px;
+  		padding: 0px;
    		background-color: #f2f2f2;
-   		font-size: small;
-   		display: block;
+   		height: 40px;
 	}
 	
 	p {
 		top: 80%;
-		left: 50%;
+		left: 30%;
+		right: 30%;
+		overflow: none;
+		position: absolute;
+		margin: auto;
 	}
 	</style>
 
@@ -96,6 +98,7 @@
 		<p>Follow in the footsteps of music legends. Step inside Abbey Road Studios with Google.</p>
 	</header>
 	<footer>
+		<div id="footer">
 		<ul class="left">
 			<li><a href="#">Advertising</a></li>
 			<li><a href="#">Business</a></li>
@@ -106,6 +109,7 @@
 			<li><a href="#">Terms</a></li>
 			<li><a href="#">Settings</a></li>
 		</ul>
+	</div>
 	</footer>
 </body>
 </html>
